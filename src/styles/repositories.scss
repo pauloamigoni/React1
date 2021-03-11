@@ -1,7 +1,14 @@
-section.repository-list {
-  margin: 40px;
-  font-size: 16px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
+section.repository-list {
+ // display: inline-flex;
+  margin: 20px;
+  font-size: 1rem;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+
+  
   h1{
     margin-bottom: 1rem;
   
@@ -13,21 +20,19 @@ section.repository-list {
     flex-wrap: wrap;
     padding: 0;
     text-align: center;
+    align-items: center;
+
+
+
     
   }
   li{
-    background: #CCC;
-    min-width: 12em;
-    min-height: 1em;
-    margin: .5em;
-    padding: .55em;
-    display: inline-block; /* non-flexbox browsers */
-    flex: 1;
-    border-radius: 15px 50px;
 
-    & + li {
-      margin-top: 20px;
-    }
+width: calc(100% / 2);
+display: inline-block;
+    // & + li {
+    //   margin-top: 20px;
+    // }
   }
 
   p{
@@ -54,9 +59,9 @@ section.repository-list {
     display: 1;
     align-items: center;
     text-align: center;
-    margin-top: 0.2rem;
-    width: 50px;
-    height: 50px;
+    margin-top: 50%;
+    width: 100px;
+    height: 100px;
     background-size: cover;
     background-position: top center;
 
